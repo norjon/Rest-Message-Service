@@ -14,7 +14,7 @@ curl -v http://localhost:8080/inittestdata
 curl -v http://localhost:8080/readmessages?phonenumber=0701234567
 
 # Retrieve message for phone number and limited to start and stop indices from a list sorted by timestamp
-curl -v http://localhost:8080/readsomemessages?phonenumber=0701234567&start=0&stop=0
+curl -v 'http://localhost:8080/readsomemessages?phonenumber=0701234567&start=0&stop=0'
 
 # Retrieve all messages
 curl -v http://localhost:8080/readallmessages
