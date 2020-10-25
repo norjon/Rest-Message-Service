@@ -5,6 +5,8 @@ This is a service where messages can be send to a receiver preferably identified
 
 There is Docker Build file which can be used to build a docker image by using the command: ./mvnw spring-boot:build-image
 
+docker run -it -p8080:8080 rest-messages:0.0.4-SNAPSHOT
+
 By running this in docker with Docker Swarm it is possible to guarantee resilience by having at least one replica running at all times. However right now it is setup to use an H2 instance for dev purposes. By using a clustered DB solution it would be possible to use the same source in order to guarantee data integrity and redundancy.
 
 # Initialize with some test data
