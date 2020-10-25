@@ -10,7 +10,7 @@ By running this in docker with Docker Swarm it is possible to guarantee resilien
 # Initialize with some test data
 curl -v http://localhost:8080/inittestdata
 
-# Retrieve message for phone number
+# Retrieve message for phone number, read messages will be flagged as read
 curl -v http://localhost:8080/readmessages?phonenumber=0701234567
 
 # Retrieve message for phone number and limited to start and stop indices from a list sorted by timestamp
